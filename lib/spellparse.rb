@@ -443,6 +443,26 @@ class ParseSpellsTxt
 	
 		effectamt = 0
 		case formula
+            when 1
+                effectamt = level * 1
+            when 2
+                effectamt = level * 2
+            when 3
+                effectamt = level * 3
+            when 4
+                effectamt = level * 4
+            when 5
+                effectamt = level * 5
+            when 6
+                effectamt = level * 6
+            when 7
+                effectamt = level * 7
+            when 8
+                effectamt = level * 8
+            when 9
+                effectamt = level * 9
+            when 10
+                effectamt = level * 10
             when 100
                 effectamt = 0
             when 101
@@ -477,6 +497,8 @@ class ParseSpellsTxt
                 effectamt = level / 2
             when 122
                 effectamt = 0
+            when 169
+                effectamt = level * 18
 			else
 				return "Unknown effect: " + formula.to_s
         end
