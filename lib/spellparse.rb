@@ -282,13 +282,8 @@ class ParseSpellsTxt
 			when 57
 				return "Levitate"
 			when 58
-				# Illusion - this one takes some calculation
-				value = base1 << (16 + base2)
-				if (base2 <= 0)
-					return "Illusion: " + base1.to_s
-				else
-					return "Illusion: " + base1.to_s + "(" + base2.to_s + ")"
-				end
+				# Illusion - this should have the illusion name sent to it as part of extra data
+				return "Illusion: " + extra
 			when 59
 				return "Damage Shield: " + (-value).to_s + " points"
 			when 61
