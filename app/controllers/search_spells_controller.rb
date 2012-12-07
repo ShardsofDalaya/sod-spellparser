@@ -156,8 +156,8 @@ public
 				illusion = Illusion.select("name").where("model1=" + e.base1.to_s + " and model2=" + e.max.to_s)
 				extra = ""
 				extra = (illusion.first != nil) ? illusion.first.name : "" 
-			elsif (e.formula == 100 or e.effect == 139 or e.effect == 153)
-				# Try to get a spell name in the case of formulas with a value 100, as well as effect ID 153. This happens for procs
+			elsif (e.formula == 100 or e.effect == 139 or e.effect == 144 or e.effect == 153 or e.effect == 154)
+				# Try to get a spell name in the case of formulas with a value 100, as well as effect ID 153. This happens for procs as well as other "linked" spells and effects
 				spelltemp = Spell.select("name").where("spells.id = " + e.base1.to_s)
 				if (spelltemp.first != nil)
 					extra_spell = spelltemp.first.name
@@ -176,7 +176,7 @@ public
 			# Don't need to do for detrimental spells
 			if (beneficial)
 				unless (e.base1 == 0 or e.effect == 32)		# 32 is summoned - no silly stacks there!
-					stacked_effects = Effect.select("DISTINCT *").joins("INNER JOIN spells ON effects.spell_id = spells.id").where("beneficial = 1 and base1 != 0 and effect = " + e.effect.to_s + " and slot = " + e.slot.to_s).order("spells.name")
+					stacked_effects = Effect.select("DISTINCT *").joins("INNER JOIN spells ON effects.spell_id = spells.id").where("beneficial = 1 and duration > 0 and base1 != 0 and effect = " + e.effect.to_s + " and slot = " + e.slot.to_s).order("spells.name")
 	    	        stacked_effects.each do |stacked_spell|
 	        	        # Get the name
 	            	    unless hashStackedSpells.has_key?(stacked_spell.spell_id)
