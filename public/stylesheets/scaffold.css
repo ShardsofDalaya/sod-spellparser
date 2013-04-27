@@ -4,7 +4,7 @@ html {
 
 body { 
 	height: 100%;
-	background-image:url('sod-bkgnd.png');
+	background-image:url('../sod-bkgnd.png');
 	color:#FFF;
 }
 
