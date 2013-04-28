@@ -329,7 +329,7 @@ class ParseSpellsTxt
             when 84
                 return "Gravity Flux"
             when 85
-				effect_name = use_html ? ("<a href='search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
+				effect_name = use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
 				return "Add Weapon Proc: " + effect_name
 			when 86
                 return "Decrease Social Radius to " + value.to_s + maxlevel
@@ -437,9 +437,9 @@ class ParseSpellsTxt
 			when 132
 				return GetEffectPercentDescriptorSingle("Mana Cost", -value)
 			when 139
-				return "Excludes spell: " + (use_html ? ("<a href='search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name)
+				return "Excludes spell: " + (use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name)
 			when 144
-				effect_name = use_html ? ("<a href='search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
+				effect_name = use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
 				return "Damage Shield: Causes " + effect_name + " when hit"
 			when 145
 				return "Fly Mode"
@@ -462,10 +462,10 @@ class ParseSpellsTxt
 				return "Swarm Pet"
 			when 153
 				# Autocast
-				effect_name = use_html ? ("<a href='search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
+				effect_name = use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
 				return "Auto cast: " + effect_name 
 			when 154
-				effect_name = use_html ? ("<a href='search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
+				effect_name = use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
 				return "Dispell Effect: " + effect_name
 			when 199
 				return GetEffectPercentDescriptorSingle("Hate Transfer", base1)
