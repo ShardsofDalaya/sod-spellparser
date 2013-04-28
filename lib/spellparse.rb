@@ -237,7 +237,7 @@ class ParseSpellsTxt
 			when 30
 				return "Decrease agro radius to " + value.to_s + maxlevel
 			when 31
-				return "Mezmerize" + maxlevel
+				return "Mesmerize up to level " + base1.to_s
 			when 32
 				# TODO: Try to look up a friendly name
 				return "Summon Item  " + base1.to_s
