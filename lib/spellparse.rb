@@ -326,6 +326,13 @@ class ParseSpellsTxt
                 return "Feign Death (" + value.to_s + "% Chance)" if (value < 100)
                 return "Feign Death"
             when 75
+	    	# Voice Graft is overloaded - if base1 > 0, it's actually a detrimental spell proc
+	    	if base1 > 0
+			effect_name = use_html ? ("<a href='/search_spells/detail?spell_id=" + base1.to_s + "'>" + extra_spell_name + "</a>") : extra_spell_name
+			return "Add Spell Proc: " + effect_name + " (" + max.to_s + "% chance per 100 mana, detrimental spells only)"
+		else
+			return "Voice Graft"
+		end
                 return "Voice Graft"
             when 76
                 return "Sentinel"
