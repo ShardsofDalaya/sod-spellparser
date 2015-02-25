@@ -17,8 +17,8 @@
 		<td><b>Target Type: </b><%= spell["target_name"] %></td>
 	</tr>
 	<tr>
-		<td><b>Cast Time: </b><%= "%.1f" % (spell.cast_time / 1000) %> seconds</td>
-		<td><b>Recast Time: </b><%= "%.1f" % (spell.recast_time / 1000) %></td>
+		<td><b>Cast Time: </b><%= "%.1f" % (spell.cast_time / 1000.0) %> seconds</td>
+		<td><b>Recast Time: </b><%= "%.1f" % (spell.recast_time / 1000.0) %></td>
 		<td><b>Skill: </b><%= spell["skill_name"] %></td>
 	</tr>
 	<tr>
