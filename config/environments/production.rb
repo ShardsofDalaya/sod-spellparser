@@ -46,4 +46,7 @@ Spellparser::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # Load everything in memory in advance to speed up response/query time
+  # config.eager_load = true
 end

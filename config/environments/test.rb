@@ -32,4 +32,7 @@ Spellparser::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Load everything in memory in advance to speed up response/query time
+  # config.eager_load = false
 end

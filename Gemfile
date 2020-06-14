@@ -1,16 +1,19 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '6.0.3.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem 'duration'
-gem 'mysql'
-gem "mysql2", "~> 0.3.11"
+gem "mysql2"
 gem "htmlentities"
-gem "activerecord-import"
+
+# No longer needed for rails 6 --Quizart
+# gem 'sqlite3'
+# gem 'mysql'
+# gem "activerecord-import"
 
 # Use unicorn as the web server
 # gem 'unicorn'
