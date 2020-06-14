@@ -5,15 +5,15 @@ gem 'rails', '6.0.3.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
 gem 'duration'
 gem "mysql2"
 gem "htmlentities"
+gem 'sqlite3'
+gem "activerecord-import"
 
 # No longer needed for rails 6 --Quizart
-# gem 'sqlite3'
 # gem 'mysql'
-# gem "activerecord-import"
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -24,6 +24,6 @@ Spellparser::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 
   # Load everything in memory in advance to speed up response/query time
-  # config.eager_load = false
+  config.eager_load = false
 end
 

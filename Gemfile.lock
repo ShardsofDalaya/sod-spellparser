@@ -45,6 +45,8 @@ GEM
     activerecord (6.0.3.1)
       activemodel (= 6.0.3.1)
       activesupport (= 6.0.3.1)
+    activerecord-import (1.0.5)
+      activerecord (>= 3.2)
     activestorage (6.0.3.1)
       actionpack (= 6.0.3.1)
       activejob (= 6.0.3.1)
@@ -119,6 +121,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tzinfo (1.2.7)
@@ -132,10 +135,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-import
   duration
   htmlentities
   mysql2
   rails (= 6.0.3.1)
+  sqlite3
 
 BUNDLED WITH
    2.1.4

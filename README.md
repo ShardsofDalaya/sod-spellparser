@@ -31,3 +31,13 @@ Copy config/database.yml.example into the same directory and rename to database.
 # To run in production mode:
 `EDITOR="mate --wait" rails credentials:edit` (only have to do this once)
 `rails s -e production`
+
+## Irrelevant Depreciation Warnings
+These two sets of depration warnings are because of rails itself, and can be safely ignored
+```/var/lib/gems/2.7.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/helper.rb:355: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call```
+```/var/lib/gems/2.7.0/gems/sprockets-4.0.2/lib/sprockets/base.rb:118: warning: The called method `[]' is defined here```
+You can permanently ignore them by doing any of the following:
+`export RUBYOPT='-W:no-deprecated -W:no-experimental'` (ignores them forever)
+Add `RUBYOPT='-W:no-deprecated -W:no-experimental'` before your server command, i.e. `RUBYOPT='-W:no-deprecated -W:no-experimental' rails server` (ignores it for that instance)
+Add the line `Warning[:deprecated] = false` to Gemfile (ignores them for as long as that line exists)
+See `https://github.com/rails/rails/issues/38202` and `https://rubyreferences.github.io/rubychanges/2.7.html#warning-and-` for more information.
