@@ -28,14 +28,7 @@ Copy config/database.yml.example into the same directory and rename to database.
 `gem install bundler`
 `bundle install`
 `rails s` (development mode by default)
-
-## To run in production mode:
-# Set up Apache/Passenger
-(May need to uninstall any older versions of Phusion Passenger first)
-`sudo apt-get update`
-`sudo apt-get install apache2`
-`sudo apt-get install libapache2-mod-passenger`
-
+`passenger start` (production mode by default)
 
 ## Irrelevant Depreciation Warnings
 These two sets of depration warnings are because of rails itself, and can be safely ignored
