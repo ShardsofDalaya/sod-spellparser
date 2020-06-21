@@ -63,6 +63,7 @@ GEM
     crass (1.0.6)
     duration (0.1.0)
     erubi (1.9.0)
+    etc (1.1.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     htmlentities (4.3.4)
@@ -84,6 +85,10 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    passenger (6.0.5)
+      etc
+      rack
+      rake (>= 0.8.1)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -139,6 +144,7 @@ DEPENDENCIES
   duration
   htmlentities
   mysql2
+  passenger
   rails (= 6.0.3.1)
   sqlite3
 

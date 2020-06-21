@@ -10,6 +10,7 @@ gem "mysql2"
 gem "htmlentities"
 gem 'sqlite3'
 gem "activerecord-import"
+gem "passenger"
 
 # No longer needed for rails 6 --Quizart
 # gem 'mysql'
