@@ -5,3 +5,6 @@ tmp/
 database.yml
 spells_us.txt
 favicon.ico
+
+/config/master.key
+/config/credentials.yml.enc

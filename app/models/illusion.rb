@@ -1,3 +1,3 @@
 class Illusion < ActiveRecord::Base
-  attr_accessible :id, :model1, :model2, :name
+  attr_accessor :id, :model1, :model2, :name
 end

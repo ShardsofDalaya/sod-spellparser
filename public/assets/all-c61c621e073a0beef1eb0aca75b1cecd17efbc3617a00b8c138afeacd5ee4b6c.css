@@ -4,17 +4,17 @@ html {
 
 body { 
 	height: 100%;
-	/*background-image:url('/images/paper_back_faded.jpg');*/
+	/*background-image:url(/assets/paper_back_faded-d2fc87a6278662675393ad39221b1609ce7285bfc1be653b2e63ccce8ad90d04.jpg);*/
 	background-color: #000000;
 	color:#4f4524;
 }
 
 .backleft {
-	background-image: url('/images/paperedge_left1.jpg');
+	background-image: url(/assets/paperedge_left1-bd1debf6accf06b25888a440d9067c6cc608ac4c962ab9014c545777d13c3bc4.jpg);
 	background-position: right top;
 }
 .backright {
-	background-image: url('/images/paperedge_right1.jpg');
+	background-image: url(/assets/paperedge_right1-f4d9fe2400198f47b758b9b37cea9711e7f594c4dc697dc556755556cbe8e533.jpg);
 	background-position: left top;
 }
 
@@ -30,7 +30,7 @@ tbody { background: #333; }*/
 
 #content { 
 	/*background-color: #222;*/ 
-	background-image:url('/images/paper_back_faded.jpg');
+	background-image:url(/assets/paper_back_faded-d2fc87a6278662675393ad39221b1609ce7285bfc1be653b2e63ccce8ad90d04.jpg);
 	color:#000;
 	/*border: solid 2px #151c2b;*/
 }
@@ -120,7 +120,7 @@ input
 }
 
 .pagetop {
-	background-image: url('/images/header_paper.jpg');
+	background-image: url(/assets/header_paper-183ba532ef7c811f739cb9d1a4b22a9778a0219818ab3bb4af0a8227322ea325.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	font-size: 30px;

@@ -10,7 +10,7 @@ Spellparser::Application.configure do
   config.whiny_nils = true
 
   # Show full error reports and disable caching
-  #config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = true
   #config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false
 
@@ -22,5 +22,8 @@ Spellparser::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  # Load everything in memory in advance to speed up response/query time
+  config.eager_load = false
 end
 
